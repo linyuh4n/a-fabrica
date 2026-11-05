@@ -29,10 +29,10 @@ export function AboutSection() {
         <div className="about-grid">
           <div className="about-content">
             <p style={{ fontSize: "1.125rem", color: "var(--color-text)", lineHeight: 1.8, marginBottom: "var(--space-xl)" }}>
-              {academyConfig.about.text}
+              {academyConfig.about.details}
             </p>
             
-            <div className="concepts-grid">
+            {/*<div className="concepts-grid">
               {academyConfig.about.concepts.map((concept: Concept, index: number) => {
                 const Icon = conceptIcons[concept.title] || Target;
                 return (
@@ -45,7 +45,7 @@ export function AboutSection() {
                   </article>
                 );
               })}
-            </div>
+            </div>*/}
           </div>
 
           <div className="about-image" aria-hidden="true">

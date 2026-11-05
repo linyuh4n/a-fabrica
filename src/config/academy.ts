@@ -78,6 +78,7 @@ export const academyConfig = {
   about: {
     title: "MUITO MAIS QUE UMA ACADEMIA.",
     text: "A Fábrica é um espaço dedicado ao desenvolvimento físico, à disciplina e à evolução pessoal. Aqui, musculação e artes marciais se encontram para oferecer experiências que vão além do treinamento.",
+    details: "Chega de adiar seus objetivos! Enquanto você pensa, outros já estão transformando o corpo e a vida! 👉 Planos promocionais trimestrais e semestrais disponíveis. Treine em um ambiente completo, com acompanhamento de verdade e foco em RESULTADOS REAIS.",
     concepts: [
       { title: "Disciplina", description: "Desenvolva consistência e compromisso com seus objetivos." },
       { title: "Respeito", description: "Valores que ultrapassam os limites do tatame." },

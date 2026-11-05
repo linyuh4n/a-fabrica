@@ -47,7 +47,7 @@ export function LocationSection() {
   const handleMapsClick = (e: React.MouseEvent) => {
     e.preventDefault();
     const query = encodeURIComponent(academyConfig.address.mapsQuery);
-    window.open(`https://www.google.com/maps/search/?api=1&query=${query}`, "_blank", "noopener,noreferrer");
+    window.open(`https://maps.app.goo.gl/z8gTkoFnPNd4VGdW7`, "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -119,7 +119,7 @@ export function LocationSection() {
             </div>
           </div>
 
-          <div className="location-map">
+          {/*<div className="location-map">
             <iframe
               title="Localização da A Fábrica - Google Maps"
               src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyD&q=${encodeURIComponent(academyConfig.address.mapsQuery)}`}
@@ -130,7 +130,7 @@ export function LocationSection() {
             <p style={{ marginTop: "var(--space-md)", textAlign: "center", color: "var(--color-text-muted)", fontSize: "0.875rem" }}>
               Mapa fornecido pelo Google Maps. A localização exata da entrada pode variar.
             </p>
-          </div>
+          </div>*/}
         </div>
       </div>
     </section>

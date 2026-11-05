@@ -46,7 +46,6 @@ export function LocationSection() {
 
   const handleMapsClick = (e: React.MouseEvent) => {
     e.preventDefault();
-    const query = encodeURIComponent(academyConfig.address.mapsQuery);
     window.open(`https://maps.app.goo.gl/z8gTkoFnPNd4VGdW7`, "_blank", "noopener,noreferrer");
   };
 

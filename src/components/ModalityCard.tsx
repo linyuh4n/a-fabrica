@@ -19,7 +19,7 @@ export function ModalityCard({ modality }: ModalityCardProps) {
 
   const imageMap: Record<string, string> = {
     "musculacao": "/images/banners/academia-banner.jpg",
-    "jiu-jitsu": "/images/banners/carlson-gracie.jpeg",
+    "jiu-jitsu": "/images/gallery/carlson-gracie.jpg",
   };
 
   const imageSrc = imageMap[modality.id] || "/images/banners/academia-banner.jpeg";

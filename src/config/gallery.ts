@@ -18,7 +18,7 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: "banner-2",
-    src: "/images/banners/planos-carlson-gracie.jpg",
+    src: "/images/gallery/carlson-gracie.jpg",
     alt: "Equipe Carlson Gracie - Material promocional com identidade visual e planos de Jiu-Jitsu",
     title: "Equipe Carlson Gracie",
     description: "Material promocional da equipe Carlson Gracie apresentando identidade visual e planos de Jiu-Jitsu",

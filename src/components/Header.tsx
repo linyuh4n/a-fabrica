@@ -52,10 +52,14 @@ export function Header() {
     <header className={`header ${isScrolled ? "scrolled" : ""}`} role="banner">
       <div className="header-inner">
         <Link to="/" className="header-logo" aria-label="A Fábrica - Página inicial">
-          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <rect width="40" height="40" rx="8" fill="#A90506"/>
-            <text x="20" y="28" font-family="Oswald, Montserrat, sans-serif" font-size="16" font-weight="700" fill="white" text-anchor="middle">AF</text>
-          </svg>
+          <img 
+            src="/images/logo/logo.jpg" 
+            alt="" 
+            width="40" 
+            height="40" 
+            aria-hidden="true"
+            style={{ borderRadius: "8px", objectFit: "cover" }}
+          />
           <span>A Fábrica</span>
         </Link>
 

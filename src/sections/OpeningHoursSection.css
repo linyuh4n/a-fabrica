@@ -1,0 +1,77 @@
+.hours-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.hours-card {
+  padding: var(--space-xl);
+  text-align: center;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-normal);
+  /* Animation handled by prefers-reduced-motion in global.css */
+}
+
+.hours-card:hover {
+  border-color: var(--color-primary);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.hours-type {
+  display: inline-block;
+  padding: var(--space-xs) var(--space-md);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--type-color);
+  background-color: rgba(169, 5, 6, 0.1);
+  border: 1px solid var(--type-color);
+  border-radius: var(--radius-full);
+  margin-bottom: var(--space-md);
+}
+
+.hours-day {
+  font-family: var(--font-primary);
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin-bottom: var(--space-xs);
+  color: var(--color-white);
+}
+
+.hours-time {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  margin-bottom: var(--space-md);
+}
+
+.hours-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  padding: var(--space-lg);
+  background-color: rgba(169, 5, 6, 0.05);
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius-md);
+  color: var(--color-text-muted);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto var(--space-xl);
+}
+
+.hours-note strong {
+  color: var(--color-accent);
+}
+
+@media (max-width: 768px) {
+  .hours-grid {
+    grid-template-columns: 1fr;
+  }
+}

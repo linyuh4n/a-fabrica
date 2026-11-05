@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://afabrica.com.br/sitemap.xml

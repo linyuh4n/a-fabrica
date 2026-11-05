@@ -1,0 +1,117 @@
+.calorie-result-details {
+  animation: fadeIn var(--transition-normal);
+}
+
+.calorie-result-main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-lg);
+  margin-top: var(--space-lg);
+}
+
+.calorie-card {
+  padding: var(--space-xl);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-md);
+  transition: all var(--transition-normal);
+}
+
+.calorie-card:hover {
+  border-color: var(--color-border-accent);
+}
+
+.calorie-card.featured {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-accent);
+  background: linear-gradient(135deg, var(--color-surface), rgba(169, 5, 6, 0.05));
+}
+
+.calorie-card-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(169, 5, 6, 0.1);
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius-full);
+  color: var(--color-accent);
+}
+
+.calorie-card.featured .calorie-card-icon {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.calorie-card-label {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.calorie-card-value {
+  font-family: var(--font-primary);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-white);
+  line-height: 1;
+}
+
+.calorie-card-desc {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+}
+
+.calorie-targets {
+  margin-top: var(--space-xl);
+}
+
+.target-card {
+  padding: var(--space-lg);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.target-card h5 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.target-card em {
+  font-style: normal;
+  font-weight: 600;
+}
+
+.calorie-explanation {
+  padding: var(--space-lg);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.calorie-explanation summary {
+  font-size: 1rem;
+}
+
+.calorie-explanation[open] summary {
+  margin-bottom: var(--space-md);
+}
+
+@media (max-width: 768px) {
+  .calorie-result-main {
+    grid-template-columns: 1fr;
+  }
+  
+  .calorie-card-value {
+    font-size: 2rem;
+  }
+}

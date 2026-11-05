@@ -1,0 +1,178 @@
+/* Responsive utilities and specific breakpoints */
+
+/* Large desktop */
+@media (min-width: 1440px) {
+  :root {
+    --container-padding: 3rem;
+  }
+}
+
+/* Desktop */
+@media (max-width: 1200px) {
+  :root {
+    --space-4xl: 5rem;
+  }
+}
+
+/* Tablet landscape */
+@media (max-width: 1024px) {
+  :root {
+    --space-4xl: 4rem;
+    --space-3xl: 3rem;
+    --header-height: 70px;
+  }
+  
+  .hero {
+    min-height: calc(100vh - 70px);
+  }
+}
+
+/* Tablet portrait */
+@media (max-width: 768px) {
+  :root {
+    --space-4xl: 3.5rem;
+    --space-3xl: 2.5rem;
+    --space-2xl: 2rem;
+    --container-padding: 1.25rem;
+    --header-height: 64px;
+  }
+  
+  .hero {
+    min-height: calc(100vh - 64px);
+  }
+  
+  .btn-lg {
+    padding: var(--space-md) var(--space-xl);
+    font-size: 1rem;
+  }
+  
+  .section-title {
+    font-size: clamp(1.75rem, 5vw, 2.5rem);
+  }
+  
+  .plan-price {
+    font-size: 2.5rem;
+  }
+  
+  .result-value {
+    font-size: 2rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  :root {
+    --space-4xl: 3rem;
+    --space-3xl: 2rem;
+    --space-xl: 1.25rem;
+    --container-padding: 1rem;
+  }
+  
+  .hero-title {
+    font-size: clamp(2rem, 7vw, 3rem);
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  .plan-card {
+    padding: var(--space-lg);
+  }
+  
+  .plan-price {
+    font-size: 2rem;
+  }
+  
+  .calculator-card {
+    padding: var(--space-lg);
+  }
+  
+  .location-card {
+    padding: var(--space-lg);
+  }
+  
+  .footer {
+    padding: var(--space-3xl) 0 var(--space-xl);
+  }
+}
+
+/* Print styles */
+@media print {
+  .header,
+  .whatsapp-float,
+  .hero-actions,
+  .plan-card .btn,
+  .cta-section,
+  .footer-social,
+  .footer-bottom-links {
+    display: none !important;
+  }
+  
+  body {
+    background: white;
+    color: black;
+  }
+  
+  .section {
+    page-break-inside: avoid;
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  :root {
+    --color-border: #FFFFFF;
+    --color-text-muted: #CCCCCC;
+  }
+  
+  .btn-primary,
+  .btn-secondary,
+  .btn-outline-red,
+  .btn-whatsapp {
+    border-width: 3px;
+  }
+}
+
+/* Landscape mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero {
+    min-height: auto;
+    padding: var(--space-3xl) 0;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: var(--space-lg);
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .btn:hover,
+  .card:hover,
+  .modality-card:hover,
+  .plan-card:hover,
+  .differential-card:hover,
+  .gallery-item:hover,
+  .header-nav-link:hover,
+  .footer-link:hover,
+  .footer-social-link:hover,
+  .whatsapp-float-btn:hover {
+    transform: none;
+    box-shadow: none;
+  }
+  
+  .modality-card:hover img,
+  .gallery-item:hover img {
+    transform: none;
+  }
+  
+  .accordion-trigger:hover {
+    background-color: var(--color-surface);
+  }
+}

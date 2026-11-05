@@ -1,0 +1,23 @@
+.bjj-notice {
+  margin-top: var(--space-xl);
+  padding: var(--space-lg);
+  background-color: rgba(169, 5, 6, 0.1);
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius-md);
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+  text-align: center;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bjj-notice strong {
+  color: var(--color-accent);
+}
+
+@media (max-width: 768px) {
+  .plans-grid {
+    grid-template-columns: 1fr;
+  }
+}

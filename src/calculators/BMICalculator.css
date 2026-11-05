@@ -1,0 +1,106 @@
+.bmi-result-details {
+  animation: fadeIn var(--transition-normal);
+}
+
+.bmi-result-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xl);
+  margin-top: var(--space-lg);
+  padding: var(--space-xl);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.bmi-value-circle {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 8px solid var(--bmi-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.1), transparent),
+              var(--color-surface-secondary);
+}
+
+.bmi-value {
+  font-family: var(--font-primary);
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--color-white);
+  line-height: 1;
+}
+
+.bmi-label {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.bmi-classification {
+  text-align: center;
+}
+
+.classification-label {
+  display: inline-block;
+  padding: var(--space-sm) var(--space-xl);
+  font-family: var(--font-primary);
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--color-white);
+  background-color: var(--classification-color);
+  border-radius: var(--radius-full);
+  margin-bottom: var(--space-md);
+}
+
+.classification-explanation {
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.bmi-details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-lg);
+}
+
+.detail-card {
+  padding: var(--space-lg);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.detail-card h4 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.detail-card p {
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .bmi-value-circle {
+    width: 140px;
+    height: 140px;
+  }
+  
+  .bmi-value {
+    font-size: 3rem;
+  }
+  
+  .bmi-details-grid {
+    grid-template-columns: 1fr;
+  }
+}

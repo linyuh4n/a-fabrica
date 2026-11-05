@@ -6,7 +6,7 @@ describe("WhatsApp Utilities", () => {
     it("should generate correct WhatsApp link with default message", () => {
       const link = generateWhatsAppLink();
       // encodeURIComponent does NOT encode ! (RFC 3986 unreserved chars: A-Z a-z 0-9 - _ . ~ ! * ' ( ))
-      expect(link).toBe("https://wa.me/5542991246560?text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20a%20A%20F%C3%A1brica%20e%20saber%20mais%20sobre%20os%20planos%20e%20modalidades.");
+      expect(link).toBe("https://wa.me/5542991361617?text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20a%20A%20F%C3%A1brica%20e%20saber%20mais%20sobre%20os%20planos%20e%20modalidades.");
     });
 
     it("should generate link with custom message", () => {
@@ -33,7 +33,7 @@ describe("WhatsApp Utilities", () => {
       openWhatsApp({ message: "Teste" });
       
       expect(openSpy).toHaveBeenCalledWith(
-        "https://wa.me/5542991246560?text=Teste",
+        "https://wa.me/5542991361617?text=Teste",
         "_blank",
         "noopener,noreferrer"
       );

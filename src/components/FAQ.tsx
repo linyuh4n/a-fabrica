@@ -34,7 +34,7 @@ const faqItems: FAQItem[] = [
   },
   {
     question: "Como entrar em contato?",
-    answer: "Pelo WhatsApp: (42) 99124-6560 ou clique em qualquer botão \"Fale Conosco\" no site. Também pode nos seguir no Instagram: @fabrica.academia.",
+    answer: "Pelo WhatsApp: (42) 991361617 ou clique em qualquer botão \"Fale Conosco\" no site. Também pode nos seguir no Instagram: @fabrica.academia.",
   },
   {
     question: "Como posso começar a treinar?",

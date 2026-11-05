@@ -67,11 +67,11 @@ Utilizar exatamente o nome da rua informado, sem alterar sua grafia sem confirma
 
 ## WhatsApp
 
-Número: +55 42 99124-6560.
+Número: +55 42 991361617.
 
 Link:
 
-https://wa.me/5542991246560
+https://wa.me/5542991361617
 
 Mensagem padrão:
 
@@ -773,7 +773,7 @@ Rua Leopoldo Fores, 38 — Uvaranas, Ponta Grossa — PR, CEP 84030-120.
 
 WhatsApp:
 
-(42) 99124-6560.
+(42) 991361617.
 
 Instagram:
 

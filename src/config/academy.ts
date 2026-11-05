@@ -17,9 +17,9 @@ export const academyConfig = {
   },
   
   whatsapp: {
-    number: "5542991246560",
-    formatted: "(42) 99124-6560",
-    link: "https://wa.me/5542991246560",
+    number: "5542991361617",
+    formatted: "(42) 99136-1617",
+    link: "https://wa.me/5542991361617",
     defaultMessage: "Olá! Gostaria de conhecer a A Fábrica e saber mais sobre os planos e modalidades.",
   },
   

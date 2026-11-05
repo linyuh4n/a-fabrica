@@ -1,4 +1,3 @@
-import { Calendar } from "lucide-react";
 import { generateWhatsAppLink } from "@/lib/whatsapp";
 import { SectionTitle } from "@/components/SectionTitle";
 import "./OpeningHoursSection.css";
@@ -53,8 +52,8 @@ export function OpeningHoursSection() {
     <section id="horarios" className="section" aria-labelledby="hours-title">
       <div className="container">
         <SectionTitle 
-          title="ESTAMOS ESPERANDO POR VOCÊ" 
-          subtitle="Horários de funcionamento da academia. Para horários específicos de aulas de Jiu-Jitsu, entre em contato."
+          title="HORÁRIOS MUSCULAÇÃO" 
+          subtitle="Horários de funcionamento da academia de musculação."
         />
 
         <div className="hours-grid">

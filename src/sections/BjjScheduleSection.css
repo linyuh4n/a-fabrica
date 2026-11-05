@@ -1,0 +1,126 @@
+.bjj-classes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+}
+
+.bjj-class-card {
+  padding: var(--space-xl);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-normal);
+}
+
+.bjj-class-card:hover {
+  border-color: var(--color-primary);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.bjj-class-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-lg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.bjj-class-icon {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(169, 5, 6, 0.1);
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius-full);
+  color: var(--color-accent);
+  margin-bottom: var(--space-md);
+  transition: all var(--transition-normal);
+}
+
+.bjj-class-card:hover .bjj-class-icon {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.bjj-class-title {
+  font-size: 1.25rem;
+  color: var(--color-white);
+  margin: 0;
+}
+
+.bjj-schedule-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.bjj-schedule-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-sm) var(--space-md);
+  background-color: var(--color-surface-secondary);
+  border-radius: var(--radius-md);
+  transition: background-color var(--transition-fast);
+}
+
+.bjj-schedule-item:hover {
+  background-color: rgba(169, 5, 6, 0.1);
+}
+
+.bjj-schedule-days {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  text-align: left;
+}
+
+.bjj-schedule-time {
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  white-space: nowrap;
+  margin-left: var(--space-md);
+}
+
+.bjj-schedule-note {
+  margin-top: var(--space-2xl);
+  padding: var(--space-lg);
+  background-color: rgba(169, 5, 6, 0.1);
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius-md);
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.bjj-schedule-note strong {
+  color: var(--color-white);
+}
+
+@media (max-width: 1024px) {
+  .bjj-classes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .bjj-classes-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .bjj-class-card {
+    padding: var(--space-lg);
+  }
+  
+  .bjj-schedule-time {
+    font-size: 0.9375rem;
+  }
+}

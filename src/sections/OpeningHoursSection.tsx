@@ -72,13 +72,6 @@ export function OpeningHoursSection() {
           ))}
         </div>
 
-        <div className="hours-note" role="note">
-          <Calendar width="20" height="20" aria-hidden="true" style={{ color: "var(--color-accent)", verticalAlign: "middle", marginRight: "var(--space-xs)" }} />
-          <strong>Observação:</strong> Estes são os horários de funcionamento da academia. 
-          A grade de aulas de Jiu-Jitsu possui horários específicos. 
-          Consulte a disponibilidade pelo WhatsApp.
-        </div>
-
         <div style={{ textAlign: "center", marginTop: "var(--space-2xl)" }}>
           <button 
             className="btn btn-primary btn-lg"

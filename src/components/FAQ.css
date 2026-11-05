@@ -45,7 +45,7 @@
   background-color: var(--color-surface-secondary);
 }
 
-.accordion-trigger[aria-expanded="true"] {
+details[open] > .accordion-trigger {
   color: var(--color-accent);
   background-color: var(--color-surface-secondary);
 }
@@ -59,7 +59,7 @@
   margin-left: var(--space-md);
 }
 
-.accordion-trigger[aria-expanded="true"] .accordion-icon {
+details[open] .accordion-icon {
   transform: rotate(180deg);
   color: var(--color-accent);
 }
@@ -68,6 +68,10 @@
   overflow: hidden;
   max-height: 0;
   transition: max-height var(--transition-normal) ease;
+}
+
+details[open] .accordion-content {
+  max-height: 500px;
 }
 
 .accordion-content-inner {

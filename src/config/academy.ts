@@ -52,6 +52,33 @@ export const academyConfig = {
     sunday: { open: "09:00", close: "13:00", label: "Domingos e feriados" },
   },
   
+  bjjSchedules: [
+    {
+      id: "adulto",
+      title: "Jiu-Jitsu Adulto",
+      schedules: [
+        { days: "Segunda a Sexta", time: "19:30" },
+        { days: "Terça, Quinta e Sexta", time: "12:00" },
+        { days: "Terça e Quinta", time: "17:00" },
+        { days: "Sábado", time: "11:00" },
+      ],
+    },
+    {
+      id: "feminino",
+      title: "Jiu-Jitsu Exclusivo Feminino",
+      schedules: [
+        { days: "Segunda, Quarta e Sexta", time: "18:30" },
+      ],
+    },
+    {
+      id: "kids",
+      title: "Jiu-Jitsu Kids",
+      schedules: [
+        { days: "Terça e Quinta", time: "18:30" },
+      ],
+    },
+  ],
+
   seo: {
     title: "A Fábrica | Academia, Musculação e Jiu-Jitsu em Uvaranas",
     description: "Conheça a A Fábrica, academia de musculação e artes marciais em Uvaranas, Ponta Grossa. Confira nossos planos, horários e localização.",

@@ -6,6 +6,7 @@ import { BjjPlansSection } from "@/sections/BjjPlansSection";
 import { DifferentialsSection } from "@/sections/DifferentialsSection";
 import { OpeningHoursSection } from "@/sections/OpeningHoursSection";
 import { ToolsSection } from "@/sections/ToolsSection";
+import { BjjScheduleSection } from "@/sections/BjjScheduleSection";
 import { LocationSection } from "@/sections/LocationSection";
 import { CTASection } from "@/sections/CTASection";
 import { FAQ } from "@/components/FAQ";
@@ -20,6 +21,7 @@ export function Home() {
       <BjjPlansSection />
       <DifferentialsSection />
       <OpeningHoursSection />
+      <BjjScheduleSection />
       <ToolsSection />
       <LocationSection />
       <FAQ />

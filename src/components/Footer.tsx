@@ -148,7 +148,7 @@ export function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>© {currentYear} A Fábrica — Musculação e Artes Marciais. Todos os direitos reservados. Feito por Lin Tech</p>
+          <p>© {currentYear} A Fábrica — Musculação e Artes Marciais. Todos os direitos reservados. Feito por <a href="https://www.lintech.app" target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-text-muted)", textDecoration: "underline" }}>Lin Tech</a></p>
           <div className="footer-bottom-links">
             <a href="#privacidade" className="footer-bottom-link">Política de Privacidade</a>
             <a href="#termos" className="footer-bottom-link">Termos de Uso</a>

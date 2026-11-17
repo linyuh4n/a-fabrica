@@ -60,7 +60,7 @@ export function Header() {
             aria-hidden="true"
             style={{ borderRadius: "8px", objectFit: "cover" }}
           />
-          <span>A Fábrica</span>
+          <span id="a-fabrica">A Fábrica</span>
         </Link>
 
         <nav className={`header-nav ${isMenuOpen ? "open" : ""}`} role="navigation" aria-label="Navegação principal">
@@ -103,7 +103,7 @@ export function Header() {
             aria-label="Fale conosco no WhatsApp"
           >
             <MessageSquare width="18" height="18" aria-hidden="true" />
-            <span>FALE CONOSCO</span>
+            <span id="btn-fale-conosco">FALE CONOSCO</span>
           </a>
           <button
             className="header-menu-btn"

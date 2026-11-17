@@ -221,3 +221,18 @@
 .header-nav a.header-nav-link:hover::after {
   width: 0;
 }
+
+@media (max-width: 455px) {
+    #a-fabrica {
+        font-size: 20px;
+    }
+    #btn-fale-conosco {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 430) {
+    #btn-fale-conosco {
+        font-size: 10px;
+    }
+}
